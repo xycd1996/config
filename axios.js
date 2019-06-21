@@ -8,7 +8,7 @@ const CancelToken = Axios.CancelToken
 
 const axios = Axios.create({
   // 10秒请求超时
-  timeout: 1000,
+  timeout: 10000,
 
   // `withCredentials` 表示跨域请求时是否需要使用凭证
   withCredentials: false,

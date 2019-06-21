@@ -9,3 +9,12 @@
 ## jsconfig.json vscode 识别别名
 
 ## vue.config.js 扩展 webpack 配置-仅限 vue 使用
+
+## React 使用 Dart.sass
+
+```
+{
+  "sass": "^1.21.0",
+  "node-sass": "npm:sass"
+}
+```

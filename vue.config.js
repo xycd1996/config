@@ -20,5 +20,18 @@ module.exports = {
       .set('@components', resolve('src/components'))
       .set('@api', resolve('src/api'))
       .set('@views', resolve('src/views'))
+  },
+  // 反向代理配置，解决跨域问题
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://xxxx/device/',
+        changeOrigin: true,
+        ws: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    }
   }
 }
